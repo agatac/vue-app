@@ -1,5 +1,5 @@
 <div>
-  <p>Enter your username to get some Github stats!</p>
-  <github-input />
-  <github-output />
+  <router-link :to="{ name: 'Hello' }">Home</router-link>
+  <router-link to="/github">GitHub App</router-link>
+  <router-view></router-view>
 </div>

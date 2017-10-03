@@ -1,10 +1,11 @@
 import Vue from 'vue';
-// import VueRouter from 'vue-router';
+import router from './router'
 
 import AppComponent from './components/App/index.vue'
 
 const vm = new Vue({
   el: '#app',
+  router,
   components: {
     app: AppComponent
   },
