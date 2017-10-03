@@ -1,11 +1,11 @@
-import GithubInput from '../GithubInput/index.vue'
-import GithubOutput from '../GithubOutput/index.vue'
+import GitHubInput from '../GitHubInput/GitHubInput.vue'
+import GitHubOutput from '../GitHubOutput/GitHubOutput.vue'
 
 export default {
   name: 'GitHubApp',
   components: {
-    'github-input': GithubInput,
-    'github-output': GithubOutput,
+    'github-input': GitHubInput,
+    'github-output': GitHubOutput,
   },
   data() {
     return {}

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import HelloComponent from '../components/Hello.vue'
-import GitHubApp from '../components/GitHubApp/index.vue'
+import GitHubApp from '../components/GitHubApp/GitHubApp.vue'
 
 Vue.use(Router)
 

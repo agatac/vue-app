@@ -1,5 +1,5 @@
 export default {
-  name: 'GithubUserData',
+  name: 'GitHubUserData',
   props: ['data'],
   data() {
     return {}

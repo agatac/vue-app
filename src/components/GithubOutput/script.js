@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import bus from '../bus'
-import GithubUserData from '../GithubUserData/index.vue'
+import GitHubUserData from '../GitHubUserData/GitHubUserData.vue'
 
 export default {
-  name: 'GithubOutput',
+  name: 'GitHubOutput',
   components: {
-    'github-user-data': GithubUserData,
+    'github-user-data': GitHubUserData,
   },
   created() {
     bus.$on('new-username', this.onUsernameChange)
@@ -16,9 +16,9 @@ export default {
   methods: {
     onUsernameChange(name) {
       this.currentUsername = name
-      this.fetchGithubData(name)
+      this.fetchGitHubData(name)
     },
-    fetchGithubData(name) {
+    fetchGitHubData(name) {
       // if we have data already, don't request again
       if (this.githubData.hasOwnProperty(name)) return
 

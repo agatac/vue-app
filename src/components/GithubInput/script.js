@@ -1,7 +1,7 @@
 import bus from '../bus'
 
 export default {
-  name: 'GithubInput',
+  name: 'GitHubInput',
   methods: {
     onSubmit(e) {
       this.username && bus.$emit('new-username', this.username)
