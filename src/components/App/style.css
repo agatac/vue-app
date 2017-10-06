@@ -1,3 +1,1 @@
-p {
-  color: 'red'
-}
+@import '../../../node_modules/vuetify/dist/vuetify.min.css'

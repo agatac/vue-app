@@ -1,4 +1,16 @@
-<form v-on:submit.prevent="onSubmit">
-  <input type="text" v-model="username" placeholder="Enter a GitHub username..." />
-  <button type="submit">Go!</button>
-</form>
+<v-form v-model="valid" ref="form" lazy-validation>
+  <v-text-field
+    label="Username"
+    v-model="username"
+    :rules="usernameRules"
+    required
+  ></v-text-field>
+
+  <v-btn
+    @click="onSubmit"
+    :disabled="!valid"
+  >
+    submit
+  </v-btn>
+  <v-btn @click="clear">clear</v-btn>
+</v-form>

@@ -1,9 +1,3 @@
-<div>
-  <p v-if="currentUsername == null">
-    Enter a username above to see their GitHub data
-  </p>
-  <p v-else>
-    Below are the results for {{ currentUsername }}
-    <github-user-data :data="githubData[currentUsername]" />
-  </p>
+<div v-if="currentUsername">
+  <github-user-data :data="githubData[currentUsername]" />
 </div>

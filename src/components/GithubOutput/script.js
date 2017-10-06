@@ -16,7 +16,7 @@ export default {
   methods: {
     onUsernameChange(name) {
       this.currentUsername = name
-      this.fetchGitHubData(name)
+      this.currentUsername && this.fetchGitHubData(name)
     },
     fetchGitHubData(name) {
       // if we have data already, don't request again
