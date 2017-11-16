@@ -1,0 +1,35 @@
+<div>
+  <v-layout>
+    <v-flex xs12 sm8 offset-sm2 mt-3>
+      <h3>Image placeholders made with SVG</h3>
+      <blockquote>
+        Mini app showing a few examples of progressive image loading with SVG generated with primitive.js.
+        Inspired by <a target="_blank" href="https://medium.freecodecamp.org/using-svg-as-placeholders-more-image-loading-techniques-bed1b810ab2c">this article.</a>
+      </blockquote>
+      <v-container fluid grid-list-md mt-3 class="grey lighten-4">
+        <v-layout row wrap>
+          <v-flex
+            v-bind="{ [`xs${card.flex}`]: true }"
+            v-for="card in cards"
+            :key="card.title"
+          >
+            <v-card>
+              <v-card-media
+                :src="card.src"
+                height="600px"
+              >
+                <v-container fill-height fluid>
+                  <v-layout fill-height>
+                    <v-flex xs12 align-end flexbox>
+                      <span class="headline white--text" v-text="card.title"></span>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+              </v-card-media>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-flex>
+  </v-layout>
+</div>

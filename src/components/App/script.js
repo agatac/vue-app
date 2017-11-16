@@ -7,6 +7,7 @@ export default {
        menuItems: [
           { title: 'Home', path: '/', icon: 'home' },
           { title: 'GitHub API', path: '/github', icon: 'code' },
+          { title: 'SVG images', path: '/svg', icon: 'image' },
         ]
      }
    },
